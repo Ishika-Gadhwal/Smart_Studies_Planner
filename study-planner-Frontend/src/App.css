@@ -1,0 +1,61 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24353a;
+  padding: 12px 20px;
+  color: white;
+  z-index: 10;
+}
+
+.nav-left {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: #77e5a4;
+}
+
+.nav-link:hover {
+  transform: scale(1.03);
+}
+
+.logout-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-button:hover {
+  background-color: white;
+  color: #1f2937;
+}
+
+.content {
+  /* padding: 30px; */
+  text-align: center;
+}
+
+.home-title {
+  font-size: 24px;
+  color: #333;
+}

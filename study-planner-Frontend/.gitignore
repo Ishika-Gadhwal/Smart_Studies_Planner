@@ -1,0 +1,8 @@
+#node_modules for both frontend and backend
+study-planner-Backend/node_modules
+study-planner-Frontend/node_modules
+
+
+#Local environment variables
+study-planner-Backend/.env
+#study-planner-Frontend/.env

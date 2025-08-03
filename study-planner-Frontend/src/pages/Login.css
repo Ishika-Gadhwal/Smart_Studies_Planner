@@ -1,0 +1,131 @@
+/* Full-screen gradient background with animation */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    margin: auto;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ensures the form stays vertically centered and clean */
+.login-form-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+
+.login-form {
+    
+    flex-direction: column;
+    /* background: rgba(255, 255, 255, 0.1); */
+    border: 1.5px solid #24353a;
+    padding: 40px;
+    border-radius: 16px;
+    /* box-shadow: 0 8px 32px rgba(3, 16, 7, 0.37); */
+    width: 100%;
+    max-width: 400px;
+    color: #24353a;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    /* color: #6bd6a9; */
+    color: #24353a;
+    font-weight: 400;
+}
+
+.login-img {
+    overflow: hidden;
+    height: 450px;
+    width: 450px;
+}
+
+.login-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    /* font-weight: bold; */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 8px;
+    border: none;
+    border-radius: 8px;
+    border: 1.5px solid #77e5a4;
+    color: #24353a;
+    font-size: 16px;
+    outline: none;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border: 1.5px solid #77e5a4;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    /* background: #6bd6a9; */
+    background-color: #77e5a4;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+    /* background: #1d7646; */
+    transform: scale(1.05);
+    background: #24353a;
+}
+
+.error {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #0c2315;
+    text-decoration: underline;
+}
+
+.register-link a:hover {
+    color: #000000;
+    font-weight: bolder;
+}
+
+
+.register-link-advanced a:hover {
+    color: #ddd;
+}
