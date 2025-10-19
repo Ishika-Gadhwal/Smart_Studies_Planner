@@ -572,6 +572,80 @@ td button:hover {
     margin-bottom: 0;
 }
 
+/* Replace your existing table styles with these */
+.ai-plan-container .markdown-content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 30px 0;
+    background: white;
+    border: 1.5px solid rgba(119, 229, 164, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(119, 229, 164, 0.1);
+}
+
+.ai-plan-container .markdown-content th {
+    background: #24353a;
+    color: white;
+    padding: 16px 18px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.ai-plan-container .markdown-content td {
+    border-bottom: 1px solid rgba(119, 229, 164, 0.2);
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #24353a;
+    transition: background-color 0.2s ease;
+}
+
+.ai-plan-container .markdown-content tbody tr:nth-child(odd) {
+    background: white;
+}
+
+.ai-plan-container .markdown-content tbody tr:nth-child(even) {
+    background: rgba(119, 229, 164, 0.15);
+}
+
+.ai-plan-container .markdown-content tbody tr:hover {
+    background: rgba(119, 229, 164, 0.25);
+}
+
+.ai-plan-container .markdown-content ul {
+    margin: 30px 0;
+    padding: 0;
+    background: rgba(119, 229, 164, 0.05);
+    border-left: 4px solid #77e5a4;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 25px;
+    text-align: left;
+}
+
+.ai-plan-container .markdown-content li {
+    font-size: 1rem;
+    color: #24353a;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+    font-weight: 500;
+    line-height: 1.7;
+    list-style: none;
+}
+
+.ai-plan-container .markdown-content li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #77e5a4;
+    font-weight: bold;
+}
 /* Toast Notification */
 .toast {
     position: fixed;

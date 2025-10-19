@@ -334,13 +334,12 @@ function App() {
                             Copy
                         </button>
                     </div>
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{aiPlan}</ReactMarkdown>
+                    {/* Add this wrapper div */}
+                    <div className="markdown-content">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{aiPlan}</ReactMarkdown>
+                    </div>
                     <p>📸 Take a screenshot of the above plan before leaving this page.</p>
                 </div>
-            )}
-
-            {showToast && (
-                <div className="toast">✅ Subject added successfully!</div>
             )}
         </div>
     );
