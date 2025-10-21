@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api' || process.env.BACKEND_URI,
+    baseURL: 'https://smart-studies-planner-backend.onrender.com',
 });
 
 
