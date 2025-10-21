@@ -558,62 +558,150 @@ td button:hover {
     list-style: none;
 }
 
-.ai-plan-container li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 1.5rem;
-    color: #77e5a4;
-    font-weight: bold;
+    .ai-plan-container li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.5rem;
+        color: #77e5a4;
+        font-weight: bold;
+    }
+
+/* Additional ReactMarkdown specific overrides */
+.markdown-content * {
+    box-sizing: border-box;
 }
 
-.ai-plan-container li:last-child {
+.markdown-content p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+    margin: 1.5rem 0 1rem 0;
+    color: #24353a;
+    font-weight: 600;
+}
+
+/* Super specific selectors for ReactMarkdown generated tables */
+.study-plan-content table,
+.ai-plan-container .study-plan-content table,
+.ai-plan-container .markdown-content.study-plan-content table {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    margin: 30px 0 !important;
+    background: white !important;
+    border: 1.5px solid rgba(119, 229, 164, 0.3) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(119, 229, 164, 0.1) !important;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.study-plan-content thead,
+.ai-plan-container .study-plan-content thead {
+    background: #24353a !important;
+}
+
+.study-plan-content th,
+.ai-plan-container .study-plan-content th,
+.ai-plan-container .markdown-content.study-plan-content th {
+    background: #24353a !important;
+    color: white !important;
+    padding: 16px 18px !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.5px !important;
+    border: none !important;
+}
+
+.study-plan-content td,
+.ai-plan-container .study-plan-content td,
+.ai-plan-container .markdown-content.study-plan-content td {
+    border-bottom: 1px solid rgba(119, 229, 164, 0.2) !important;
+    padding: 14px 18px !important;
+    text-align: left !important;
+    font-size: 0.95rem !important;
+    color: #24353a !important;
+    transition: background-color 0.2s ease !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+
+.study-plan-content tbody tr:nth-child(odd),
+.ai-plan-container .study-plan-content tbody tr:nth-child(odd) {
+    background: white !important;
+}
+
+.study-plan-content tbody tr:nth-child(even),
+.ai-plan-container .study-plan-content tbody tr:nth-child(even) {
+    background: rgba(119, 229, 164, 0.15) !important;
+}
+
+.study-plan-content tbody tr:hover,
+.ai-plan-container .study-plan-content tbody tr:hover {
+    background: rgba(119, 229, 164, 0.25) !important;
+}.ai-plan-container li:last-child {
     margin-bottom: 0;
 }
 
-/* Replace your existing table styles with these */
+/* Enhanced table styles for ReactMarkdown content */
+.ai-plan-container table,
 .ai-plan-container .markdown-content table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin: 30px 0;
-    background: white;
-    border: 1.5px solid rgba(119, 229, 164, 0.3);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(119, 229, 164, 0.1);
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    margin: 30px 0 !important;
+    background: white !important;
+    border: 1.5px solid rgba(119, 229, 164, 0.3) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(119, 229, 164, 0.1) !important;
 }
 
+.ai-plan-container th,
 .ai-plan-container .markdown-content th {
-    background: #24353a;
-    color: white;
-    padding: 16px 18px;
-    text-align: left;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
+    background: #24353a !important;
+    color: white !important;
+    padding: 16px 18px !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.5px !important;
 }
 
+.ai-plan-container td,
 .ai-plan-container .markdown-content td {
-    border-bottom: 1px solid rgba(119, 229, 164, 0.2);
-    padding: 14px 18px;
-    text-align: left;
-    font-size: 0.95rem;
-    color: #24353a;
-    transition: background-color 0.2s ease;
+    border-bottom: 1px solid rgba(119, 229, 164, 0.2) !important;
+    padding: 14px 18px !important;
+    text-align: left !important;
+    font-size: 0.95rem !important;
+    color: #24353a !important;
+    transition: background-color 0.2s ease !important;
 }
 
+.ai-plan-container tbody tr:nth-child(odd),
 .ai-plan-container .markdown-content tbody tr:nth-child(odd) {
-    background: white;
+    background: white !important;
 }
 
+.ai-plan-container tbody tr:nth-child(even),
 .ai-plan-container .markdown-content tbody tr:nth-child(even) {
-    background: rgba(119, 229, 164, 0.15);
+    background: rgba(119, 229, 164, 0.15) !important;
 }
 
+.ai-plan-container tbody tr:hover,
 .ai-plan-container .markdown-content tbody tr:hover {
-    background: rgba(119, 229, 164, 0.25);
+    background: rgba(119, 229, 164, 0.25) !important;
 }
 
 .ai-plan-container .markdown-content ul {
