@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
+// import authRoutes from './routes/authRoutes.js'
 dotenv.config();
 
 import { GoogleGenerativeAI } from "@google/generative-ai";

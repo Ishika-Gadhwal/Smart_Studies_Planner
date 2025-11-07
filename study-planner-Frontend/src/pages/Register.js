@@ -20,7 +20,7 @@ function Register({ setIsLoggedIn }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            let res = await API.post('/auth/register', formData);
+            let res = await API.post('/api/auth/register', formData);
             setMessage("Register Successfully ! ");
             if (res.status === 200) {
                 localStorage.setItem('token', res.data.token);

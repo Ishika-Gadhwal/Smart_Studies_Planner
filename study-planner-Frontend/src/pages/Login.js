@@ -12,7 +12,7 @@ function Login({ setIsLoggedIn }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await API.post('/auth/login', { email, password });
+            const res = await API.post('/api/auth/login', { email, password });
             if (res.status === 200) {
                 localStorage.setItem('token', res.data.token);
                 setIsLoggedIn(true);
